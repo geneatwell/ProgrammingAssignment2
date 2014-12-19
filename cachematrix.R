@@ -1,3 +1,8 @@
+-## Put comments here that give an overall description of what your
+        -## functions do
+        -
+        -## Write a short comment describing this function
+        
 ##The first function below creates a special "matrix" object that caches its inverse.  Testing has shown that
 ##the inverted matrix computed by this function and stored is identical to the inverted matrix computed by the
 ##solve() command used directly on the input matrix.
@@ -23,7 +28,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getinverse = getinverse)
 }
 
-
+-## Write a short comment describing this function
 ## The function below retrieves from cache or computes the inverse of a matrix entered into makeCacheMatrix()
 ## above utilizing the list created by makeCacheMatrix() and the information stored as a result. If the inverse
 ## has already been calculated (and the matrix has not changed), then cacheSolve() retrieves 'inverse' from
@@ -37,6 +42,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {  
+        - ## Return a matrix that is the inverse of 'x'
         
         inverse <- x$getinverse()  ## inverted matrix is loaded from above
         if(!is.null(inverse)) {  ## if that matrix is empty, the flow bypasses the next two lines
